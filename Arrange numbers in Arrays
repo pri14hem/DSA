@@ -1,0 +1,15 @@
+void arrange(int *arr, int n)
+{
+  int startIndex = 0;
+        int endIndex = n-1;
+        for(int i =1; i<=n; i++){
+           if( i % 2 != 0){
+                arr[startIndex] = i;
+                startIndex++;
+           }
+            else{
+                arr[endIndex] = i;
+                endIndex--;
+            }
+        }
+}
